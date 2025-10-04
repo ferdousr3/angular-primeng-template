@@ -7,7 +7,7 @@ export type AboutRoutes = {
 
 export const aboutRoutes: AboutRoutes = {
    about: {
-      path: '/',
+      path: 'about',
       loadComponent: () =>
          import('./page-about/page-about.component').then(
             (m) => m.PageAboutComponent,
