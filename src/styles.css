@@ -1,3 +1,4 @@
+@import "./styles/fonts.css";
 /* External Styles */
 @import "@angular/cdk/overlay-prebuilt.css";
 @import "primeicons/primeicons.css";
@@ -7,13 +8,10 @@
 @plugin "tailwindcss-primeui";
 
 /* Custom Styles */
-@import "./styles/fonts.css";
 @import "./styles/components.css";
 @import "./styles/utils.css";
 
-
 @layer base {
-
     html,
     body,
     * {

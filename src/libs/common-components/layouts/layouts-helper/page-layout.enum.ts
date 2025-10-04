@@ -3,5 +3,4 @@ export enum PageLayout {
     Dashboard = 'dashboard',
     Blank = 'blank',
     Public = 'public',
-
 }
