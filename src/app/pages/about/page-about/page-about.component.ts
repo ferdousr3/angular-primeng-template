@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { PrimeModules } from '../../../../libs/prime-modules';
+import { PrimeModules } from '../../../../libs/prime-modules'
 
 @Component({
     selector: 'app-page-about',

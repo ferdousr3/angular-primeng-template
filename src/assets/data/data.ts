@@ -1,6 +1,6 @@
 export const DATA: Data = {
     siteName: 'Dosi-bridge',
-    description: 'open source angular tailwind primeNG project',
+    description: 'Open source angular tailwind primeNG project',
 }
 
 interface Data {

@@ -12,12 +12,14 @@
 @import "./styles/utils.css";
 
 @layer base {
+    :root {
+        --color-gray-150: #f7fafc;
+    }
     html,
     body,
     * {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 400;
         font-style: normal;
     }
 
