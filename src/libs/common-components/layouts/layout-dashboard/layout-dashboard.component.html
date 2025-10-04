@@ -1,9 +1,10 @@
-<app-dashboard-header />
+
 <div class="grid grid-cols-12">
-  <div class="col-span-4">
-    <app-sidebar-dashboard />
+  <div class="col-span-2">
+    <app-sidebar-dashboard class="w-full" />
   </div>
   <div class="col-span-8">
+    <app-dashboard-header />
     <ng-content></ng-content>
   </div>
 </div>

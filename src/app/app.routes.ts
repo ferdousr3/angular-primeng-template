@@ -1,14 +1,20 @@
 import { Route, Routes } from '@angular/router'
+import { AboutRoutes, aboutRoutes } from './pages/about/about.routes'
+import { HomeRoutes, homeRoutes } from './pages/home/home.routes'
 import {
-    notFoundRoutes,
     NotFoundRoutes,
+    notFoundRoutes,
 } from './pages/not-found/not-found.routes'
-import { homeRoutes, HomeRoutes } from './pages/home/home.routes'
-import { aboutRoutes, AboutRoutes } from './pages/about/about.routes'
+import { PostRoutes, postRoutes } from './pages/post/post.routes'
 
-type AppRouteGroups = [AboutRoutes, HomeRoutes, NotFoundRoutes]
+type AppRouteGroups = [HomeRoutes, AboutRoutes, PostRoutes, NotFoundRoutes]
 
-const groupedRoutes: AppRouteGroups = [aboutRoutes, homeRoutes, notFoundRoutes]
+const groupedRoutes: AppRouteGroups = [
+    homeRoutes,
+    aboutRoutes,
+    postRoutes,
+    notFoundRoutes,
+]
 
 const flattenedRoutes: Route[] = []
 for (const routeGroup of groupedRoutes) {

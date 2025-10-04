@@ -1,5 +1,5 @@
 export const DATA: Data = {
-    siteName: 'Dosi-bridge',
+    siteName: 'NG Template',
     description: 'Open source angular tailwind primeNG project',
 }
 

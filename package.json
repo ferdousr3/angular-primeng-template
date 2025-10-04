@@ -1,11 +1,12 @@
 {
-    "name": "dosi-bridge",
+    "name": "ng-template",
     "version": "0.0.0",
     "scripts": {
         "preinstall": "npx only-allow pnpm",
-        "githook": "pnpx lefthook install",
+        "prepare": "lefthook install",
         "format": "pnpx @biomejs/biome format . --write --no-errors-on-unmatched --files-ignore-unknown=true",
         "lint": "pnpx @biomejs/biome lint . --apply --no-errors-on-unmatched --files-ignore-unknown=true",
+        "check": "pnpx @biomejs/biome check . --diagnostic-level=error",
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
