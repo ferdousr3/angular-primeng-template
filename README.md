@@ -1,59 +1,164 @@
-# DosiBridge
+# **ng-template**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+A modern **Angular Starter Template** built with **pnpm**, **TailwindCSS 4**,
+**PrimeNG**, **Biome**, and **Lefthook**. This template delivers a clean,
+scalable, and production-ready architecture — perfect for enterprise Angular
+applications with consistent code quality and an optimized developer workflow.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ **Features**
+
+### 🚀 **Modern Angular 20 Setup**
+
+- Angular **v20+** (compatible with future versions)
+
+- TypeScript **>=5.9**
+
+- Enterprise-ready file structure
+
+- Fast and stable Angular build system
+
+### 🎨 **TailwindCSS 4 + PrimeNG UI**
+
+- TailwindCSS **v4.1** configured with PostCSS
+
+- **PrimeNG 20** components integrated
+
+- PrimeIcons included
+
+- tailwindcss-primeui for seamless UI styling
+
+### 🔐 **Authentication Ready**
+
+- JWT handling with @auth0/angular-jwt
+
+- Extendable for RBAC (role-based access control)
+
+### ⚙ **Developer Experience Boosters**
+
+- only-allow pnpm → enforce pnpm for consistency
+
+- **Biome** (format + lint + diagnostics)
+
+- **Lefthook** Git hooks (auto-lint & format on commit)
+
+- Fully configured Angular CLI scripts
+
+### 🧪 **Testing Tools**
+
+- Jasmine + Karma setup
+
+- Angular TestBed for unit/component tests
+
+### 🧵 **Clean Build & Formatting**
+
+- PostCSS configured
+
+- Prettier + Tailwind plugin included
+
+- ESNext optimized build
+
+# How to Run the Project
+
+## 1. Prerequisites
+
+Make sure you have installed:
+
+- **Node.js ≥ 22.x** → check with:
 
 ```bash
-ng serve
+node -v
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **pnpm ≥ 10 → check with:** → check with:
 
 ```bash
-ng generate component component-name
+pnpm -v
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This project enforces `pnpm` with `only-allow pnpm`. Using npm or yarn will
+fail.
+
+- **Clone the Repository**
 
 ```bash
-ng generate --help
+git clone <your-repo-url>
+cd ng-template
 ```
 
-## Building
-
-To build the project run:
+- **Install Dependencies**
 
 ```bash
-ng build
+pnpm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This will:
 
-## Running unit tests
+- Install all dependencies and devDependencies
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Run `lefthook install` automatically (prepares Git hooks)
+
+- Set up Biome for linting & formatting
+
+## 🔧 Lefthook (Automated Git Hooks)
+
+Lefthook installs automatically:
+
+```json
+"prepare": "lefthook install"
+```
+
+It ensures:
+
+- 🧹 Auto-formatting (Biome)
+
+- 🔎 Auto-linting
+
+- ❌ Prevents bad code commits
+
+- ✔ Consistent and clean codebase
+
+## 🧹 Biome (Lint, Format & Check)
+
+Common commands:
 
 ```bash
-ng test
+pnpm format   # Format code
+pnpm lint     # Lint code
+pnpm check    # Type-aware diagnostics
 ```
 
-## Running end-to-end tests
+Biome guarantees a clean, consistent, and reliable codebase.
 
-For end-to-end (e2e) testing, run:
+## 📦 Package Manager Enforcement
+
+This project strictly uses pnpm:
 
 ```bash
-ng e2e
+npx only-allow pnpm
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Using npm or yarn will be blocked for consistency.
 
-## Additional Resources
+## ✅ Summary
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To run the project:
+
+1. Install Node ≥22 and pnpm ≥10
+
+2. Clone the repo and `pnpm install`
+
+3. Start dev server with `pnpm start` or `ng serve`
+
+4. Open `http://localhost:4200/` in your browser
+
+Additional commands:
+
+- `pnpm build` → production build
+
+- `pnpm run watch` → watch mode for development
+
+- `pnpm test` → run unit tests
+
+- `pnpm format`, `pnpm lint`, `pnpm check` → code quality checks
